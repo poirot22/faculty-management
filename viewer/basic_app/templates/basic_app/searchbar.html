@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <body style="text-align:center">
+
+    {% if facs %}
+    <h1>Results Found!</h1>
+    <br>
+    <ol>
+      {% for i in facs%}
+      <li><h2><a href="/basic_app/{{i.id}}">{{i.name}}</a></h2></li>
+      {% endfor %}
+    </ol>
+
+    {% else %}
+    <h2>No results!</h2>
+    <a href="/basic_app/faculties/">Go back to list</a>
+
+    {% endif %}
+
+  </body>
+</html>

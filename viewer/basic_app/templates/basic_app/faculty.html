@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Welcome to the details page!</h1>
+    <h2>Faculty details:</h2>
+    <h3>Personal Details:</h3>
+    <p>{{faculty.name}}</p>
+    <p>{{faculty.age}}</p>
+    <p>{{faculty.designation}}</p>
+    <p>{{faculty.gender}}</p>
+    <p>{{faculty.dob}}</p>
+    <br>
+    <h3>Important details:</h3>
+    <p>{{faculty.faculty_id}}</p>
+    <p>{{faculty.aadhar_no}}</p>
+    <p>{{faculty.pan_no}}</p>
+    <p>{{faculty.email}}</p>
+    <p>{{faculty.university}}</p>
+    <p>{{faculty.percentage}}</p>
+
+
+    <a href="{% url 'basic_app:list' %}">Go back to list</a>
+    <br>
+    <a href="{% url 'basic_app:update' pk=faculty.pk%}">Update</a>
+    <br>
+    <a href="{% url 'basic_app:delete' pk=faculty.pk%}">Delete</a>
+  </body>
+</html>
+
+
+<!--fields=('name','age','designation','gender','dob','faculty_id','blood_group','aadhar_no',
+  'pan_no','mobile','email','state','district','pin','permanentAddressSameAsCurrentAddress',
+  'qualification','college','university','percentage','award','year_award','org_award',
+  'journal_name','journal_vol','issn_no','publisher','year_of_publication','article_title',
+  'project_title','duration','cost_of_project','funding_agency','start_date','end_date'
+  )--!>

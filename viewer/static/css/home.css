@@ -1,0 +1,16 @@
+#search2{
+    position: absolute;
+    right:5px;
+    top:10px;
+}
+
+#search1{
+    position: absolute;
+    right:80px;
+    width:15%;
+    top: 10px;
+}
+
+#navparent{
+    position: relative;
+}

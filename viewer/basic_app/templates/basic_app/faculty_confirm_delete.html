@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Delete {{school.name}}??</h1>
+    <form method="post">
+      {% csrf_token %}
+      <input type="submit" name="" value="Delete">
+      <a href="{% url 'basic_app:detail' pk=faculty.pk %}">Cancel</a>
+
+    </form>
+  </body>
+</html>
